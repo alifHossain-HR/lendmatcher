@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../public/fonts/MyriadPro.ttf");
+}
+
+@layer base {
+  html {
+    font-family: MyriadPro, system-ui, sans-serif;
+    
+  }
+}
