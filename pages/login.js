@@ -5,6 +5,7 @@ import { Formik, Form } from "formik"
 import * as Yup from "yup"
 import Input from '../components/custom/Input'
 
+
 const LoginSchema = Yup.object().shape({
   password: Yup.string()
     .min(8, "Password must be 8 character long.")
@@ -80,11 +81,15 @@ const Login = () => {
         </p>
         <p className="text-primary-light">
           Not registered yet?{" "}
-          <span onClick={() => router.push("/signup")} className="cursor-pointer hover:underline ">
+          <span
+            onClick={() => router.push("/signup")}
+            className="cursor-pointer hover:underline "
+          >
             Click here to sign up?
           </span>
         </p>
       </div>
+      
     </div>
   )
 }

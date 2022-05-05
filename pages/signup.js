@@ -59,7 +59,7 @@ const Signup = () => {
 
         {/* form */}
 
-        <div className="flex py-5 gap-5">
+        <div className="flex w-full py-5 gap-5">
           <label className="flex gap-x-2 ">
             <input
               type="radio"

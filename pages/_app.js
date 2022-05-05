@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Head from "next/head"
 import ProgressBar from "@badrap/bar-of-progress"
 import Router from 'next/router'
+import { ChakraProvider } from "@chakra-ui/react"
 
  const progress = new ProgressBar({
    size: 2,
@@ -13,16 +14,15 @@ import Router from 'next/router'
 
 function MyApp({ Component, pageProps }) {
 
+
     Router.events.on("routeChangeStart", progress.start)
     Router.events.on("routeChangeComplete", progress.finish)
     Router.events.on("routeChangeError", progress.finish)
   return (
-    <>
-      <Head>
-        
-      </Head>
-      <Component {...pageProps} />
-    </>
+    <ChakraProvider>
+              <Head></Head>
+        <Component {...pageProps} />
+    </ChakraProvider>
   )
 }
 
