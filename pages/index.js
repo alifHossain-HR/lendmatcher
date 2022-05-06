@@ -6,7 +6,7 @@ import HeroContent from "../components/HeroContent";
 import InvestmentContent from "../components/InvestmentContent";
 import Investors from "../components/Investors";
 import Popular from "../components/Popular";
-
+//
 
 export default function Home() {
 
